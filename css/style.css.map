@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,CAAC,CAAC;EACD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CAAG;;AAIZ,AAAD,gBAAS,CAAC;EACT,OAAO,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_settings.sass",
+        "../sass/_colors.sass",
+        "../sass/blocks/_cart.sass",
+        "../sass/blocks/_sidebar.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
