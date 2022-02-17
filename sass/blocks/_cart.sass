@@ -6,34 +6,34 @@
 	margin: 0 auto
 
 .sidebar
-	height: 100vh
+	
 	width: 11.67vw
 	background: $bg-color-purple
 	&-wrapper
 		display: flex
-		ul
-			text-decoration: none
-			text-align: center
+	&-menu
+		text-decoration: none
+		text-align: center
 		li
 			border-top: 3px solid #422D53
 			padding-top: 1.6vh
 			padding-bottom: 1.6vh
 			&:last-child
 				border-bottom: 3px solid #422D53
-
 			&:hover
 				background: $bg-color-pink
 				border-right: 4px
 				border-radius: 0 5px 5px 0
 				margin-right: -4px
 
-		a
-			color: $text-w
-			font-size: 1.30vw
-			font-weight: 700
-			&:hover
-				color: $text-w-hov
-				text-decoration: none
+			a
+				color: $text-w
+				font-size: 1.30vw
+				font-weight: 700
+				&:hover
+					color: $text-w-hov
+					text-decoration: none
+				
 .navbar-right
 	display: flex
 	align-items: flex-end
@@ -136,6 +136,133 @@
 			position: absolute
 			bottom: -8.2vh
 			left: calc(50% - 2.0vw)
+.tariff-choice
+	margin-bottom: 22.222vh
+	&__title
+		padding-top: 1.481vh
+		font-size: 2.222vh
+		font-weight: 700
+.select 
+    display: block
+    
+    width: 100%
+    position: relative
 
-.input-group-prepend
-	display: none
+
+.new-select 
+	position: relative
+	border: 1px solid #ced4da
+	padding: 10px 15px
+	cursor: pointer
+	user-select: none
+	background: #D45B78
+	border-radius: 5px
+	color: $text-w
+	
+.new-select__list
+	position: absolute
+	top: 40px
+	left: 0	
+	cursor: pointer
+	width: 100%
+	z-index: 2
+	background: #C4C4C4
+	user-select: none
+	color: #ffffff
+
+.new-select__list.on 
+    display: block
+
+
+.new-select__item
+	span
+		border-top: 1px solid #9E9E9E
+		display: block
+		padding: 10px 15px
+	
+
+
+.new-select__item
+	span
+		&:hover
+			background: #9E9E9E
+			
+
+
+.new-select
+	&:after 
+		content: ''
+		display: block
+		width: 16px
+		height: 16px
+		position: absolute
+		right: 14px
+		top: 14px
+		background: url('../img/arrow.png') right center no-repeat
+		background-size: 1.481vh
+		opacity: 0.6
+		-webkit-transition: all .27s ease-in-out
+		-o-transition: all .27s ease-in-out
+		transition: all .27s ease-in-out
+		-webkit-transform: rotate(0deg)
+		-ms-transform: rotate(0deg)
+		-o-transform: rotate(0deg)
+		transform: rotate(0deg)
+
+.new-select.on
+	&:after 
+    -webkit-transform: rotate(180deg)
+    -ms-transform: rotate(180deg)
+    -o-transform: rotate(180deg)
+    transform: rotate(180deg)
+
+.package-choice
+	margin-bottom: 31.111vh
+	&__title
+		padding-top: 1.481vh
+		font-size: 2.222vh
+		font-weight: 700
+
+.info-package__text
+	position: relative
+	font-size: 1.667vh
+	font-weight: 500
+	margin-bottom: 7.222vh
+	&::after
+			width: calc(100% + 2.604vw)
+			content: ""
+			height: 0.3vh
+			background: #D6D6D6
+			position: absolute
+			bottom: -5.093vh
+			left: -1.302vw
+
+.payoff-info
+	margin-bottom: 5.556vh
+	font-size: 2.222vh
+	font-weight: 700	
+	&__title
+		
+	&__text
+		text-align: left
+
+.payoff
+	&-wrapper
+		display: flex
+		border: 3px solid $text-pink
+		border-radius: 5px
+		justify-content: space-between;		
+		align-items: center
+	&-sum
+		font-size: 3.333vh
+		font-weight: 700
+		padding: 0 1.563vw
+
+
+.payment-button__bottom
+	padding: 1.852vh 4.0vw 	
+	background: $bg-color-pink
+	border-radius: 0
+	&:hover
+		color: $text-w-hov
+	
