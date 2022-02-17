@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,11 @@
 	<link href="fonts/font.css" rel="stylesheet">
 	<title>Calmar</title>
 </head>
+
 <body>
-	
-<div class="sidebar-wrapper">
-	<div class="sidebar">
+
+	<div class="sidebar-wrapper">
+		<div class="sidebar">
 			<a class="sidebar-logo" href="#">
 				<img class="logo" src="img/logo.png" alt="logo">
 				<ul>
@@ -21,27 +23,89 @@
 					<li><a href="#">Статистика</a></li>
 				</ul>
 			</a>
-	</div>
-		<div class="container">
-	<div class="navbar-top">
-	
-				<div class="login-panel">
-					<div class="login">Вы вошли как groupsh@yandex.ru </div>
-					<button class="loguot">Выйти</button>
-				</div>
 		</div>
+		<div class="container">
+			<div class="navbar-right">
 
-	
-	
-	<div class="cart-content">
-	
-			<div class="cart-title">Оплата сервиса</div>
-			
+				<div class="login">
+					<div class="login-mail">Вы вошли как groupsh@yandex.ru </div>
+					<button class="loguot-button">Выйти</button>
+				</div>
+				<div class="payment">
+					<div class="payment-info">Баланс
+						<span class="balance-time">13 мин.</span>
+						до
+						<span class="balance-date">12.11.21</span>
+					</div>
+					<div class="payment-button payment-button__top">Оплатить</div>
+				</div>
+			</div>
 
-		
+
+
+			<div class="cart-content">
+
+				<div class="cart-title">Оплата сервиса</div>
+				<div class="cards-tariff  row">
+					<div class="col-12 col-lg-4">
+						<div class="tariff">
+							<div class="tariff__title">Базовый</div>
+							<div class="tariff__text">
+								<div class="tariff__month">3 месяца</div>
+								<div class="tariff__price">599 руб./мес.</div>
+								<div class="tariff__skidka">без скидки</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="tariff">
+							<div class="tariff__title">Оптимальный</div>
+							<div class="tariff__text">
+								<div class="tariff__month">6 месяцев</div>
+								<div class="tariff__price">449 руб./мес.</div>
+								<div class="tariff__skidka">скидка 25%</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="tariff">
+							<div class="tariff__title">Премиум</div>
+							<div class="tariff__text">
+								<div class="tariff__month">12 месяцев</div>
+								<div class="tariff__price">299руб./мес.</div>
+								<div class="tariff__skidka">скидка 50%</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tariff-choice row">
+					<div class="col-12 col-xl-2">
+						<div class="tariff-choice__title"> Выберите тариф</div>
+					</div>
+					<div class="col-12 col-xl-4">
+						<div class="tariff-choice__select">
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<label class="input-group-text" for="inputGroupSelect01">Options</label>
+								</div>
+								<select class="custom-select" id="inputGroupSelect01">
+									<option selected>Без тарифа</option>
+									<option value="1">Базовый на 3 месяца</option>
+									<option value="2">Оптимальный на 6 месяцев</option>
+									<option value="3">Премиум на 12 месяцев</option>
+								</select>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+
+
+			</div>
+		</div>
 	</div>
-	</div>
-</div>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -52,4 +116,5 @@
 	</script>
 	<script src="js/bootstrap.min.js" defer=""> </script>
 </body>
+
 </html>

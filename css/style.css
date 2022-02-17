@@ -9,6 +9,17 @@ body {
 
 .container {
   width: 80vw;
+  padding-top: 6.5vh;
+  max-width: 80vw;
+}
+
+.payment-button {
+  color: #FFFFFF;
+  border-radius: 0 5px 5px 0;
+  align-items: center;
+  text-align: center;
+  font-size: 1.7vh;
+  font-weight: 700;
 }
 
 .logo {
@@ -44,7 +55,7 @@ body {
 }
 
 .sidebar-wrapper li:hover {
-  background: #D75C78;
+  background: #D45B78;
   border-right: 4px;
   border-radius: 0 5px 5px 0;
   margin-right: -4px;
@@ -62,16 +73,21 @@ body {
 }
 
 .navbar-right {
-  margin-right: auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .login {
+  margin-bottom: 5.5vh;
   display: flex;
+  align-items: center;
 }
 
 .login-mail {
   color: #4B4B4B;
   font-size: 1vw;
+  margin-right: 1vw;
 }
 
 .loguot-button {
@@ -79,5 +95,117 @@ body {
   color: #D45B78;
   border: 2px solid #D45B78;
   padding: 6px 18px;
+}
+
+.payment {
+  margin-bottom: 7.4vh;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  color: #FFFFFF;
+  background: #523A64;
+}
+
+.payment-info {
+  padding: 2vh 2.396vw;
+  font-size: 1.7vh;
+}
+
+.payment-button__top {
+  padding: 2vh 3.7vh;
+  border-left: 0.2vw solid #422D53;
+}
+
+.payment-button__top:hover {
+  background: #D45B78;
+}
+
+.balance-time {
+  background: #D45B78;
+  border-radius: 5px;
+  padding: 0.2vh 0.417vw;
+  margin: 0 0.781vw;
+}
+
+.cart-content {
+  padding: 3.7vh 1.302vw;
+  color: #4B4B4B;
+  background: #EEEEEE;
+}
+
+.cart-title {
+  font-weight: 700;
+  font-size: 3.3vh;
+  position: relative;
+}
+
+.cart-title::after {
+  width: calc(100% + 2.604vw);
+  content: "";
+  height: 0.3vh;
+  background: #D6D6D6;
+  position: absolute;
+  bottom: -1.3vh;
+  left: -1.302vw;
+}
+
+.cards-tariff {
+  margin-left: 7.583vw;
+  margin-right: 7.583vw;
+  margin-top: 6.2vh;
+  margin-bottom: 9.3vh;
+}
+
+.tariff {
+  text-align: center;
+  padding: 0 1.667vw;
+  border: 5px solid #D45B78;
+  background-color: #FFFFFF;
+}
+
+.tariff__title {
+  margin-top: -1px;
+  font-size: 2.2vh;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding: 1vh 1.042vw;
+  background: #D45B78;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 6.5vh;
+}
+
+.tariff__text {
+  font-size: 2.8vh;
+}
+
+.tariff__month {
+  border-bottom: 2px solid #D6D6D6;
+  margin-bottom: 2.7vh;
+}
+
+.tariff__price {
+  border-bottom: 2px solid #D6D6D6;
+  margin-bottom: 2.7vh;
+}
+
+.tariff__skidka {
+  border-bottom: 2px solid #D6D6D6;
+  font-weight: 700;
+  margin-bottom: 10.2vh;
+  position: relative;
+}
+
+.tariff__skidka::after {
+  width: 30%;
+  content: "";
+  height: 2px;
+  background: #D6D6D6;
+  position: absolute;
+  bottom: -8.2vh;
+  left: calc(50% - 2.0vw);
+}
+
+.input-group-prepend {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
