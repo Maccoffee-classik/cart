@@ -157,8 +157,7 @@ body {
 }
 
 .tariff {
-  margin-bottom: 5.56vh;
-  max-width: 13.742vw;
+  position: relative;
   text-align: center;
   padding: 0 1.2vw;
   border: 5px solid #D45B78;
@@ -194,7 +193,6 @@ body {
   border-bottom: 2px solid #D6D6D6;
   font-weight: 700;
   margin-bottom: 10.2vh;
-  position: relative;
 }
 
 .tariff__skidka::after {
@@ -203,12 +201,12 @@ body {
   height: 2px;
   background: #D6D6D6;
   position: absolute;
-  bottom: -8.2vh;
-  left: calc(50% - 2.0vw);
+  bottom: 10px;
+  left: calc(50% - 10%);
 }
 
 .tariff-choice {
-  margin-bottom: 22.222vh;
+  margin-bottom: 7.222vh;
 }
 
 .tariff-choice__title {
@@ -280,7 +278,7 @@ body {
 }
 
 .package-choice {
-  margin-bottom: 32.111vh;
+  margin-bottom: 12.111vh;
 }
 
 .package-choice__title {
@@ -353,7 +351,7 @@ body {
   left: 0;
   top: 0;
   z-index: 99;
-  height: 50vh;
+  height: 70vh;
   transform: translateX(0%);
 }
 
@@ -425,6 +423,24 @@ body {
     color: #FFFFFF;
     background: #523A64;
     justify-content: space-between;
+  }
+  .tariff {
+    margin-bottom: 5.56vh;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .col-md-4 .tariff {
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+    max-width: 260px;
+    height: 418px;
+    padding: 0 5%;
+  }
+  .cards-tariff {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
