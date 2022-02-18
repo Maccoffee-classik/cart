@@ -14,15 +14,17 @@
 <body>
 
 	<div class="sidebar-wrapper">
+		<a href="#" class="menu-btn"></a>
 		<div class="sidebar">
 			<a class="sidebar-logo" href="#">
 				<img class="logo" src="img/logo.png" alt="logo">
+				</a>
 				<ul class="sidebar-menu">
 					<li><a href="#">Звонки</a></li>
 					<li><a href="#">Виджеты</a></li>
 					<li><a href="#">Статистика</a></li>
 				</ul>
-			</a>
+			
 		</div>
 		<div class="container">
 			<div class="navbar-right">
@@ -47,7 +49,7 @@
 
 				<div class="cart-title">Оплата сервиса</div>
 				<div class="cards-tariff  row">
-					<div class="col-12 col-lg-4">
+					<div class="col-12 col-md-4 col-lg-4">
 						<div class="tariff">
 							<div class="tariff__title">Базовый</div>
 							<div class="tariff__text">
@@ -57,7 +59,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-4">
+					<div class="col-12 col-md-4 col-lg-4">
 						<div class="tariff">
 							<div class="tariff__title">Оптимальный</div>
 							<div class="tariff__text">
@@ -67,12 +69,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-4">
+					<div class="col-12 col-md-4 col-lg-4">
 						<div class="tariff">
 							<div class="tariff__title">Премиум</div>
 							<div class="tariff__text">
 								<div class="tariff__month">12 месяцев</div>
-								<div class="tariff__price">299руб./мес.</div>
+								<div class="tariff__price">299 руб./мес.</div>
 								<div class="tariff__skidka">скидка 50%</div>
 							</div>
 						</div>
@@ -80,10 +82,10 @@
 				</div>
 				
 				<div class="tariff-choice row">
-					<div class="col-12 col-xl-2">
+					<div class="col-12 col-lg-2 col-xl-2">
 						<div class="tariff-choice__title"> Выберите тариф</div>
 					</div>
-						<div class="col-12 col-xl-4">
+						<div class="col-12 col-lg-4 col-xl-4">
 							<div class="tariff-choice__select">
 								<select class="select" name="language">
 									<option disabled>Без тарифа</option>
@@ -101,10 +103,10 @@
 
 				</div>
 				<div class="package-choice row">
-						<div class="col-12 col-xl-2">
+						<div class="col-12 col-lg-2 col-xl-2">
 							<div class="package-choice__title">Выберите пакет	минут</div>
 						</div>
-						<div class="col-12 col-xl-4">
+						<div class="col-12 col-lg-4 col-xl-4">
 							<select class="select" name="language">
 								<option disabled>Без пакета минут</option>
 								<option value="1">50 минут - 200 руб.</option>
@@ -154,6 +156,13 @@
 	
 	<script src="js/bootstrap.min.js" defer=""> </script>
 	<script src="js/main.js" defer=""> </script>
+	<script>
+		$('.menu-btn').on('click', function (e) {
+			e.preventDefault();
+			$('.sidebar').toggleClass('sidebar_active');
+			$('.content').toggleClass('content_active');
+		})
+	</script>
 </body>
 
 </html>
