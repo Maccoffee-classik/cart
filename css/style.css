@@ -153,10 +153,11 @@ body {
   margin-left: 7.583vw;
   margin-right: 7.583vw;
   margin-top: 6.2vh;
-  margin-bottom: 9.3vh;
+  margin-bottom: 4.3vh;
 }
 
 .tariff {
+  margin-bottom: 5.56vh;
   max-width: 13.742vw;
   text-align: center;
   padding: 0 1.2vw;
@@ -279,7 +280,7 @@ body {
 }
 
 .package-choice {
-  margin-bottom: 31.111vh;
+  margin-bottom: 32.111vh;
 }
 
 .package-choice__title {
@@ -349,9 +350,9 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
-  position-left: 0;
-  position-top: 0;
-  position-z-index: 99;
+  left: 0;
+  top: 0;
+  z-index: 99;
   height: 50vh;
   transform: translateX(0%);
 }
@@ -359,15 +360,13 @@ body {
 .menu-btn {
   position: absolute;
   right: 30px;
-  top: 10px;
+  top: 0.52vh;
   z-index: 100;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
   vertical-align: middle;
-  content: "";
-  background: 50%/100% 100% no-repeat;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -385,12 +384,13 @@ body {
 @media only screen and (max-width: 992px) {
   .sidebar {
     display: none;
+    flex-direction: column;
   }
   .login {
     display: none;
   }
-  .sidebar-logo {
-    display: none;
+  .sidebar-menu li a {
+    font-size: 5.3vw;
   }
   .container {
     width: 100vw;
@@ -402,11 +402,54 @@ body {
     max-width: 100%;
     width: 100%;
   }
+  .mobile-top-wrapper {
+    position: absolute;
+    width: 86vw;
+    height: 6.1vh;
+    top: 4.352vh;
+    right: 7vw;
+    border-radius: 5px;
+    align-items: center;
+    background: #523A64;
+  }
+  .navbar-right {
+    align-items: center;
+    margin-top: 5.0vh;
+  }
+  .payment {
+    width: 86vw;
+    margin-bottom: 7.4vh;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    color: #FFFFFF;
+    background: #523A64;
+    justify-content: space-between;
+  }
 }
 
 @media only screen and (max-width: 570px) {
-  .container {
-    max-width: 1120px;
+  .payment {
+    flex-direction: column;
+  }
+  .payment-button__top {
+    width: 100%;
+    color: #FFFFFF;
+    border-radius: 0 0px 5px 5px;
+  }
+  .tariff-choice__title {
+    margin-bottom: 2.778vh;
+  }
+  .package-choice__title {
+    margin-bottom: 2.778vh;
+  }
+  .payoff-info__text {
+    font-size: 1.667vh;
+    padding-left: 4.564vw;
+    padding-top: 3vh;
+  }
+  .cart-content {
+    padding: 3.7vh 7.302vw;
   }
 }
 
