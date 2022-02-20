@@ -17,17 +17,17 @@
 		<div class="mobile-top-wrapper">
 			<a href="#" class="menu-btn"></a>
 		</div>
-		
+
 		<div class="sidebar">
 			<a class="sidebar-logo" href="#">
 				<img class="logo" src="img/logo.png" alt="logo">
-				</a>
-				<ul class="sidebar-menu">
-					<li><a href="#">Звонки</a></li>
-					<li><a href="#">Виджеты</a></li>
-					<li><a href="#">Статистика</a></li>
-				</ul>
-			
+			</a>
+			<ul class="sidebar-menu">
+				<li><a href="#">Звонки</a></li>
+				<li><a href="#">Виджеты</a></li>
+				<li><a href="#">Статистика</a></li>
+			</ul>
+
 		</div>
 		<div class="container">
 			<div class="navbar-right">
@@ -83,48 +83,50 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="tariff-choice row">
 					<div class="col-12 col-md-3 col-lg-2 col-xl-2">
 						<div class="tariff-choice__title"> Выберите тариф</div>
 					</div>
-						<div class="col-12 col-md-4 col-lg-4 col-xl-4">
-							<div class="tariff-choice__select">
-								<select class="select" name="language">
-									<option disabled>Без тарифа</option>
-									<option value="1">Базовый на 3 месяца</option>
-									<option value="2">Оптимальный на 6 месяцев</option>
-									<option value="3">Премиум на 12 месяцев</option>
-								</select>
+					<div class="col-12 col-md-4 col-lg-4 col-xl-4">
+						<div class="tariff-choice__select">
+							<select class="select" name="language">
+								<option disabled>Без тарифа</option>
+								<option value="1">Без тарифа</option>
+								<option value="2">Базовый на 3 месяца</option>
+								<option value="3">Оптимальный на 6 месяцев</option>
+								<option value="4">Премиум на 12 месяцев</option>
+							</select>
 
-							</div>
 						</div>
+					</div>
 
 
 
-			
+
 
 				</div>
 				<div class="package-choice row">
-						<div class="col-12 col-md-3 col-lg-2 col-xl-2">
-							<div class="package-choice__title">Выберите пакет	минут</div>
-						</div>
-						<div class="col-12 col-md-4 col-lg-4 col-xl-4">
-							<select class="select" name="language">
-								<option disabled>Без пакета минут</option>
-								<option value="1">50 минут - 200 руб.</option>
-								<option value="2">100 минут - 400руб.</option>
-								<option value="3">200 минут - 800руб.</option>
-								<option value="3">300 минут - 1200руб.</option>
-								<option value="3">400 минут - 1600руб.</option>
-								<option value="3">500 минут - 2000руб.</option>
-							</select>
-						</div>
+					<div class="col-12 col-md-3 col-lg-2 col-xl-2">
+						<div class="package-choice__title">Выберите пакет минут</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-4 col-xl-4">
+						<select class="select" name="language">
+							<option disabled>Без пакета минут</option>
+							<option value="1">Без пакета минут</option>
+							<option value="2">50 минут - 200 руб.</option>
+							<option value="3">100 минут - 400руб.</option>
+							<option value="4">200 минут - 800руб.</option>
+							<option value="5">300 минут - 1200руб.</option>
+							<option value="6">400 минут - 1600руб.</option>
+							<option value="7">500 минут - 2000руб.</option>
+						</select>
+					</div>
 				</div>
 				<div class="info-package__text">Пакет не сгорает по истечению срока действия тарифа</div>
 				<div class="payoff-info row">
-				<div class="col-12 col-md-2 col-xl-2">
-					<div class="payoff-info__title">Итого к оплате</div>
+					<div class="col-12 col-md-2 col-xl-2">
+						<div class="payoff-info__title">Итого к оплате</div>
 					</div>
 					<div class="col-12 col-md-5 col-xl-4">
 						<ul class="payoff-info__text">
@@ -132,40 +134,40 @@
 							<li>50 минут (по РФ) : 200 руб</li>
 						</ul>
 					</div>
-					</div>
-					<div class="payoff row">
-						<div class="col-12 col-sm-8 col-md-5">
-							
-							
+				</div>
+				<div class="payoff row">
+					<div class="col-12 col-sm-8 col-md-5">
 
-							<div class="payoff-wrapper">
+
+
+						<div class="payoff-wrapper">
 							<div class="payoff-sum">1997 руб.
 							</div>
 							<div class="payment-button payment-button__bottom">Оплатить</div>
-							</div>
-						
-						
-						
+						</div>
+
+
+
 
 					</div>
 
 
+				</div>
 			</div>
 		</div>
-	</div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	
-	<script src="js/bootstrap.min.js" defer=""> </script>
-	<script src="js/main.js" defer=""> </script>
-	<script>
-		$('.menu-btn').on('click', function (e) {
-			e.preventDefault();
-			$('.sidebar').toggleClass('sidebar_active');
-			$('.content').toggleClass('content_active');
-		})
-	</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<script src="js/bootstrap.min.js" defer=""> </script>
+		<script src="js/main.js" defer=""> </script>
+		<script>
+			$('.menu-btn').on('click', function (e) {
+				e.preventDefault();
+				$('.sidebar').toggleClass('sidebar_active');
+				$('.content').toggleClass('content_active');
+			})
+		</script>
 </body>
 
 </html>

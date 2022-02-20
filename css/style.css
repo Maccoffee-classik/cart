@@ -15,6 +15,7 @@ body {
 
 .payment-button {
   color: #FFFFFF;
+  cursor: pointer;
   border-radius: 0 5px 5px 0;
   align-items: center;
   text-align: center;
