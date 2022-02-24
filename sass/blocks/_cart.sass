@@ -1,48 +1,118 @@
 
+html
+	position: relative
+	min-height: 100%
+
+body
+	padding-top: 2.5rem
+	margin-bottom: 4.5rem
+	@media (max-width: 992px)
+		padding-top: 4.5rem
+
+.nav-link:hover
+	transition: all 0.4s
+.navbar
+	border-radius: 5px
+	@media (max-width: 992px)
+		width: 89.944vw
+		margin-left: 5vw
+		margin-right: 5vw
+.bg-purple
+	background-color: $bg-color-purple!important
+.fixed-top
+	top: 0
+.navbar-brand
+	margin-right: 0
+.navbar-toggler-icon
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+
 .logo
 	padding-top: 4.6vh
 	padding-bottom: 6.4vh
 	display: flex
 	margin: 0 auto
 
-.sidebar
-	
-	width: 11.67vw
+.sidenav
+
+	width: 100%
 	background: $bg-color-purple
 	&-wrapper
 		display: flex
-	&-menu
-		text-decoration: none
-		text-align: center
-		list-style-type: none
-		li
-			border-top: 3px solid #422D53
-			padding-top: 1.6vh
-			padding-bottom: 1.6vh
-			&:last-child
-				border-bottom: 3px solid #422D53
-			&:hover
-				background: $bg-color-pink
-				border-right: 4px
-				border-radius: 0 5px 5px 0
-				margin-right: -4px
+.sidenav
+	text-decoration: none
+	text-align: center
+	list-style-type: none
 
-			a
-				color: $text-w
-				font-size: 1.30vw
-				font-weight: 700
-				&:hover
-					color: $text-w-hov
-					text-decoration: none
-				
+	li
+		border-top: 3px solid #422D53
+		padding-top: 0.6vh
+		padding-bottom: 0.6vh
+		&:first-child
+			border: none
+			&:hover
+				background: none
+				margin-right: 0
+
+		&:last-child
+			border-bottom: 3px solid #422D53
+
+		&:hover
+			background: $bg-color-pink
+			border-right: 4px
+			border-radius: 0 5px 5px 0
+			margin-right: -4px
+			@media (max-width: 992px)
+				border-radius: 5px
+
+		a
+			color: $text-w
+			font-size: 1.30vw
+			font-weight: 700
+			@media (max-width: 992px)
+				font-size: 4.30vw
+			&:hover
+				color: $text-w-hov
+				text-decoration: none
+/*dвиджет добавл*/
+
+@media (min-width: 992px)
+	.sidenav
+		position: absolute
+		top: 0
+		left: 0
+		width: 11.67vw
+		background: $bg-color-purple
+		height: calc(100vh)
+		margin-top: 4.5rem
+
+		box-sizing: border-box
+		border-top: 1px solid rgba(0, 0, 0, 0.3)
+	.fixed-top
+		top: -4.5rem
+
+	.navbar-expand-lg .sidenav
+		flex-direction: column
+
+	.content-wrapper
+		margin-left: 11.67vw
+
+@media (max-width: 992px)
+	.logo
+		padding-top: 0
+		padding-bottom: 0
+
 .navbar-right
 	display: flex
 	align-items: flex-end
 	flex-direction: column
+	@media (max-width: 992px)
+		align-items: stretch
 .login
 	margin-bottom: 5.5vh
 	display: flex
 	align-items: center
+	@media (max-width: 992px)
+		display: none
 	&-mail
 		color: $text-b
 		font-size: 1vw
@@ -52,10 +122,10 @@
 	background: transparent
 	color: $text-pink
 	border: 2px solid $text-pink
-	padding: 6px 18px
+	padding: 0.3vh 0.938vw
 
 .payment
-	margin-bottom: 7.4vh
+	margin-bottom: 2.4vh
 	border-radius: 5px
 	align-items: center
 	display: flex
@@ -64,6 +134,9 @@
 	&-info
 		padding: 2vh 2.396vw
 		font-size: 	1.7vh
+		@media (max-width: 992px)
+			text-align: 	center
+			width: 100%
 
 	&-button
 		&__top
@@ -77,6 +150,7 @@
 	border-radius: 5px
 	padding: 0.2vh 0.417vw
 	margin: 0 0.781vw
+
 .cart
 
 	&-content
@@ -103,7 +177,7 @@
 	margin-bottom: 4.3vh
 
 .tariff
-	
+
 	position: relative
 	text-align: center
 	padding: 0 1.2vw
@@ -130,7 +204,7 @@
 		border-bottom: 2px solid #D6D6D6
 		font-weight: 700
 		margin-bottom: 10.2vh
-		
+
 		&::after
 			width: 30%
 			content: ""
@@ -145,14 +219,13 @@
 		padding-top: 1.481vh
 		font-size: 2.222vh
 		font-weight: 700
-.select 
-    display: block
-    
-    width: 100%
-    position: relative
+.select
+	display: block
 
+	width: 100%
+	position: relative
 
-.new-select 
+.new-select
 	position: relative
 	border: 1px solid #ced4da
 	padding: 10px 15px
@@ -161,11 +234,11 @@
 	background: #D45B78
 	border-radius: 5px
 	color: $text-w
-	
+
 .new-select__list
 	position: absolute
 	top: 40px
-	left: 0	
+	left: 0
 	cursor: pointer
 	width: 100%
 	z-index: 2
@@ -173,27 +246,22 @@
 	user-select: none
 	color: #ffffff
 
-.new-select__list.on 
-    display: block
-
+.new-select__list.on
+	display: block
 
 .new-select__item
 	span
 		border-top: 1px solid #9E9E9E
 		display: block
 		padding: 10px 15px
-	
-
 
 .new-select__item
 	span
 		&:hover
 			background: #9E9E9E
-			
-
 
 .new-select
-	&:after 
+	&:after
 		content: ''
 		display: block
 		width: 16px
@@ -213,11 +281,11 @@
 		transform: rotate(0deg)
 
 .new-select.on
-	&:after 
-    -webkit-transform: rotate(180deg)
-    -ms-transform: rotate(180deg)
-    -o-transform: rotate(180deg)
-    transform: rotate(180deg)
+	&:after
+		-webkit-transform: rotate(180deg)
+		-ms-transform: rotate(180deg)
+		-o-transform: rotate(180deg)
+		transform: rotate(180deg)
 
 .package-choice
 	margin-bottom: 12.111vh
@@ -232,20 +300,20 @@
 	font-weight: 500
 	margin-bottom: 7.222vh
 	&::after
-			width: calc(100% + 2.604vw)
-			content: ""
-			height: 0.3vh
-			background: #D6D6D6
-			position: absolute
-			bottom: -5.093vh
-			left: -1.302vw
+		width: calc(100% + 2.604vw)
+		content: ""
+		height: 0.3vh
+		background: #D6D6D6
+		position: absolute
+		bottom: -5.093vh
+		left: -1.302vw
 
 .payoff-info
 	margin-bottom: 5.556vh
 	font-size: 2.222vh
-	font-weight: 700	
+	font-weight: 700
 	&__title
-		
+
 	&__text
 		text-align: left
 
@@ -254,43 +322,38 @@
 		display: flex
 		border: 3px solid $text-pink
 		border-radius: 5px
-		justify-content: space-between;		
+		justify-content: space-between
 		align-items: center
 	&-sum
 		font-size: 3.333vh
 		font-weight: 700
 		padding: 0 1.563vw
 
-
 .payment-button__bottom
-	padding: 1.852vh 4.0vw 	
+	padding: 1.852vh 4.0vw
 	background: $bg-color-pink
 	border-radius: 0
 	&:hover
 		color: $text-w-hov
-	
-.sidebar 
-   
-  
-  
-  transition: 0.5s
-  
+
+.sidebar
+
+	transition: 0.5s
 
 .sidebar_active
 	display: flex !important
 	width: 100vw
 	align-items: center
-	justify-content: center	
+	justify-content: center
 	position: fixed
 	left: 0
 	top: 0
 	z-index: 99
 	height: 70vh
 	transform: translateX(0%)
-.sidebar-menu 
-	
+.sidebar-menu
 
-.menu-btn 
+.menu-btn
 	position: absolute
 	right: 30px
 	top: 0.52vh
@@ -300,5 +363,3 @@
 	width: 1.5em
 	height: 1.5em
 	vertical-align: middle
-	
-	
